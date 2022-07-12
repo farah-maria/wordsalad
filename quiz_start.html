@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Word Salad</title>
+</head>
+<body class="background-settings">
+  <h1 id="logo-header">W<i class="fa-solid fa-leaf"></i></h1>
+    <div class="container">
+      
+      <div id="quiz-container" class="hide">
+        <button class="btn"><a href="index.html" id="definitions"><i class="fa-solid fa-arrow-rotate-left" id="home"></i></a></button>
+        <h3 id="static-question">Is the following word a noun, an adjective, a verb or an adverb?</h3>
+
+        <div id="question">Question</div>
+        <div id="answer-clicks" class="answer-grid">
+        
+          <button class="btn">noun</button>
+          <button class="btn">adjective</button>
+          <button class="btn">verb</button>
+          <button class="btn">adverb 4</button>
+          
+        </div>
+        </div>
+      <div class="prompts">
+        <button id="ready-btn" class="ready btn">Ready?</button>
+        <button id="next-frame" class="next-frame btn hide"><i class="fa-solid fa-circle-chevron-right" id="arrow"></i></button>       
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close" id="modal-close-button">&times;</span>
+      <p id="wellDoneMessage"></p>
+      <p id="randomSentence"></p>
+    </div>
+
+</div>
+  <script src="assets/js/script.js"></script>
+  <script src="https://kit.fontawesome.com/52443e90c9.js" crossorigin="anonymous"></script>
+</body>
+</html>
