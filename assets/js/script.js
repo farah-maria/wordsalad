@@ -156,7 +156,7 @@ const questions = [
     ]
   },
   {
-    question: 'rolled',
+    question: 'rolls',
     answers: [
       { text: 'noun', correct: false },
       { text: 'adjective', correct: false },
@@ -166,7 +166,7 @@ const questions = [
     ]
   },
   {
-    question: 'dance',
+    question: 'dances',
     answers: [
       { text: 'noun', correct: false },
       { text: 'adjective', correct: false },
@@ -196,7 +196,7 @@ const questions = [
     ]
   },
   {
-    question: 'limp',
+    question: 'limps',
     answers: [
       { text: 'noun', correct: false },
       { text: 'adjective', correct: false },
@@ -307,6 +307,24 @@ const questions = [
       { text: 'noun', correct: false },
       { text: 'verb', correct: false },
       { text: 'adverb', correct: true }
+    ]
+  },
+  {
+    question: 'boy',
+    answers: [
+      { text: 'adjective', correct: false },
+      { text: 'noun', correct: true },
+      { text: 'verb', correct: false },
+      { text: 'adverb', correct: false }
+    ]
+  },
+  {
+    question: 'girl',
+    answers: [
+      { text: 'adjective', correct: false },
+      { text: 'noun', correct: true },
+      { text: 'verb', correct: false },
+      { text: 'adverb', correct: false }
     ]
   }
 ]
