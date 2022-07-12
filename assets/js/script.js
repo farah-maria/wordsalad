@@ -224,7 +224,7 @@ const questions = [
     ]
   },
   {
-    question: 'sleep',
+    question: 'sleeps',
     answers: [
       { text: 'noun', correct: false },
       { text: 'adjective', correct: false },
