@@ -205,10 +205,13 @@ margin-top: -60vh;
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #abdee6;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
-  border: 1px solid #888;
+  border: 3px solid orange;
+  font-weight: bold;
+  font-size: 150%;
+  border-radius: 7%;
   width: 80%; /* Could be more or less, depending on screen size */
 }
 
