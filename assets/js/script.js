@@ -1,13 +1,8 @@
 const readyBtn = document.getElementById('ready-btn');
-
 const nextFrame = document.getElementById('next-frame');
-
 const quizContainerElement = document.getElementById('quiz-container');
-
 const answersElement = document.getElementById('answer-clicks');
-
 const quizWordElement = document.getElementById('question');
-
 const modalMessageElement = document.getElementById('wellDoneMessage');
 
 //modal//
