@@ -1,4 +1,4 @@
-//PART 1. VARIABLES & FUNCTIONS (Quiz questions and answers are set in part 2, from line 147)//
+//PART 1. VARIABLES & FUNCTIONS FOR MAKING THE QUIZ WORK. (Actual quiz questions and answers are set in part 2, from line 147)//
 
 //Setting main variables for quiz.//
 const readyBtn = document.getElementById('ready-btn');
@@ -142,7 +142,7 @@ function generateRandomSentence(){
   return "The " + getRandomWord(getAdjectives()) + " " + getRandomWord(getNouns()) + " " + getRandomWord(getVerbs()) + " to the shop " + getRandomWord(getAdverbs()) + ".";
 }
 
-//PART 2: The twenty quiz questions are below: //
+//PART 2: TWENTY QUIZ QUESTIONS WITH ANSWER OPTIONS OFFERED TO USER://
 
 const questions = [
   {
