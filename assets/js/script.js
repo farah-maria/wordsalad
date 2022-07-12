@@ -1,6 +1,6 @@
 //PART 1. VARIABLES & FUNCTIONS FOR MAKING THE QUIZ WORK. (Actual quiz questions and answers are set in part 2, from line 147)//
 
-//Setting main variables for quiz.//
+//Setting main variables for quiz. I watched Web Dev Simplified on YouTube to guide me - https://www.youtube.com/watch?v=riDzcEQbX6k//
 const readyBtn = document.getElementById('ready-btn');
 const nextFrame = document.getElementById('next-frame');
 const quizContainerElement = document.getElementById('quiz-container');
@@ -8,7 +8,7 @@ const answersElement = document.getElementById('answer-clicks');
 const quizWordElement = document.getElementById('question');
 
 
-//modal//
+//Modal. I read the W3 Schools info on how to make a modal box with JS and CSS - https://www.w3schools.com/howto/howto_css_modals.asp //
 const modalMessageElement = document.getElementById('wellDoneMessage');
 const modal = document.getElementById("myModal");
 
