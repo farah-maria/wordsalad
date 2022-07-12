@@ -20,10 +20,10 @@ let shuffleQWords, currentWord;
 let correctAnswerCounter = 0;
 
 // setting listeners to start the game when user presses "Ready?" button at start of quiz//
-readyBtn.addEventListener('click', startGame)
+readyBtn.addEventListener('click', startGame);
 
 nextFrame.addEventListener('click', () => {
-  setNextWord()
+  setNextWord();
 });
 
 //start game//
@@ -38,7 +38,7 @@ function startGame() {
 //shuffle and show the next question in the quiz each time, hiding the previous question and answers//
 
 function setNextWord() {
-  currentWord++
+  currentWord++;
   resetState();
   showQuestion(shuffleQWords[currentWord]);
 }
@@ -55,7 +55,7 @@ function showQuestion(question) {
 
     button.addEventListener('click', clickBtn);
     answersElement.appendChild(button);
-  })
+  });
 }
 
 function resetState() {
@@ -76,7 +76,7 @@ function clickBtn(e) {
   setStatusClass(document.body, correct);
   Array.from(answersElement.children).forEach(button => {
     setStatusClass(button, button.dataset.correct);
-  })
+  });
   if (currentWord < shuffleQWords.length-1) {
     nextFrame.classList.remove('hide');
   } else {
@@ -113,7 +113,7 @@ function clearStatusClass(element) {
 function getWordType(strWordType){
   return questions.filter((question)=>{
     return question.answers.filter((ans)=>{
-      return (ans.text === strWordType && ans.correct === true)
+      return (ans.text === strWordType && ans.correct === true);
     }).length > 0;
   });
 }
@@ -136,7 +136,7 @@ function getAdjectives(){
 }
 
 function getRandomWord(arrWords){
-  return arrWords[Math.floor((Math.random() * arrWords.length))].question
+  return arrWords[Math.floor((Math.random() * arrWords.length))].question;
 }
 function generateRandomSentence(){
   return "The " + getRandomWord(getAdjectives()) + " " + getRandomWord(getNouns()) + " " + getRandomWord(getVerbs()) + " to the shop " + getRandomWord(getAdverbs()) + ".";
@@ -335,6 +335,6 @@ const questions = [
       { text: 'adverb', correct: false }
     ]
   }
-]
+];
 
 //END//
