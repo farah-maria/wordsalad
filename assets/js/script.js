@@ -1,11 +1,15 @@
+//PART 1. VARIABLES & FUNCTIONS (Quiz questions and answers are set in part 2, from line 147)//
+
+//Setting main variables for quiz.//
 const readyBtn = document.getElementById('ready-btn');
 const nextFrame = document.getElementById('next-frame');
 const quizContainerElement = document.getElementById('quiz-container');
 const answersElement = document.getElementById('answer-clicks');
 const quizWordElement = document.getElementById('question');
-const modalMessageElement = document.getElementById('wellDoneMessage');
+
 
 //modal//
+const modalMessageElement = document.getElementById('wellDoneMessage');
 const modal = document.getElementById("myModal");
 
 // Get the <span> element that closes the modal
@@ -15,12 +19,14 @@ let shuffleQWords, currentWord;
 
 let correctAnswerCounter = 0;
 
+// setting listeners to start the game when user presses "Ready?" button at start of quiz//
 readyBtn.addEventListener('click', startGame);
 
 nextFrame.addEventListener('click', () => {
   setNextWord()
 });
 
+//start game//
 function startGame() {
   readyBtn.classList.add('hide');
   shuffleQWords = questions.sort(() => Math.random() - .5);
@@ -28,6 +34,8 @@ function startGame() {
   quizContainerElement.classList.remove('hide');
   setNextWord();
 }
+
+//shuffle and show the next question in the quiz each time, hiding the previous question and answers//
 
 function setNextWord() {
   currentWord++
@@ -58,6 +66,7 @@ function resetState() {
   }
 }
 
+//incrementing score from questions answered correctly//
 function clickBtn(e) {
   const selectedButton = e.target;
   const correct = selectedButton.dataset.correct;
@@ -72,20 +81,21 @@ function clickBtn(e) {
     nextFrame.classList.remove('hide');
   } else {
     modal.style.display = "block";
+    //show user their score and a message in a pop-up modal text-box//
     modalMessageElement.innerText = 'You got ' + correctAnswerCounter +' correct out of '+shuffleQWords.length+' :)' + 
     ' Your prize is a silly, word-salad sentence. See if you can write ones of your own with the same adjective, noun, verb and adverb.';
     document.getElementById('randomSentence').innerText = generateRandomSentence();
-
+    //button on quiz offering option to start again//
     readyBtn.innerText = 'Well done! Click here to go again :)';
     readyBtn.classList.remove('hide');
-
+    //closing the modal//
     document.getElementById('modal-close-button').addEventListener('click', ()=>{
       modal.style.display = 'none';
     });
 
   }
 }
-
+//gathering data for the 'word-salad' silly random question//
 function setStatusClass(element, correct) {
   clearStatusClass(element);
   if (correct) {
@@ -108,6 +118,7 @@ function getWordType(strWordType){
   });
 }
 
+//finding, categorising and gathering word-types - eg, noun, adverb, verb, adjective - for the random sentence generated at end of quiz//
 function getNouns(){
   return getWordType('noun');
 }
@@ -130,6 +141,8 @@ function getRandomWord(arrWords){
 function generateRandomSentence(){
   return "The " + getRandomWord(getAdjectives()) + " " + getRandomWord(getNouns()) + " " + getRandomWord(getVerbs()) + " to the shop " + getRandomWord(getAdverbs()) + ".";
 }
+
+//PART 2: The twenty quiz questions are below: //
 
 const questions = [
   {
@@ -323,3 +336,5 @@ const questions = [
     ]
   }
 ]
+
+//END//
