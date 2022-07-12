@@ -238,6 +238,7 @@ margin-top: -60vh;
                       and (orientation: portrait) {
 
 #logo-header {
+  margin-top: -80vh;
   margin-left: 5vw
 }
 
@@ -252,7 +253,6 @@ body {
   margin-left: 24vw;
   margin-top: 3px;
   margin-bottom: 3px;
-
 }
 
 .word-class {
@@ -261,6 +261,18 @@ body {
 
 h3 {
   font-size: small;
+}
+
+#question {
+  font-size: 300%;
+}
+
+#static-question { 
+  font-size: 80%
+}
+
+.answer-grid {
+  gap: 5px;
 }
 
 .text-area {
@@ -274,11 +286,27 @@ h3 {
   border: solid 3px orange;  
 }
 
+.container {
+  width: 70%;
+}
+
+.btn {
+  font-size: 80%;
+
+  padding: 2px 5px;
+}
+
+
 h1 {
   text-align: center;
   font-size: 250%;
-
 }
+
+
+.modal-content {
+  font-size: 80%;
+}
+
 }
 
 
@@ -311,6 +339,16 @@ h1 {
   margin-left: 25vw;
 }
 
+.ready .next-frame {
+  font-size: 100%;
+  font-weight: 200;
+  font-family: Poppins, sans-serif;
+  padding: 2px 5px;
+  color: #254c10;
+  background-color: papayawhip;
+  border: 2px solid #2E4DA7;
+}
+
 .prompts{
   width: 95%;
   margin-left: -7vh;
@@ -325,11 +363,12 @@ h1 {
 }
 
 .btn {
-
   font-size: small;
   padding: 0.5px;
   font-weight: 200;
 }
+
+
 
 .answer-grid {
   display: grid;
@@ -342,7 +381,7 @@ h1 {
 }
 
 .ready .next-frame {
-  font-size: 100%;
+  font-size: 70%;
   font-weight: 200;
   font-family: Poppins, sans-serif;
   padding: 2px 5px;

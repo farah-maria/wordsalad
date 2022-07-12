@@ -78,7 +78,7 @@ function clickBtn(e) {
   } else {
     modal.style.display = "block";
     modalMessageElement.innerText = 'You got ' + correctAnswerCounter +' correct out of '+shuffleQWords.length+' :)' + 
-    ' Your prize is a silly, wordsalad sentence. See if you can write ones of your own with the same adjective, noun, verb and adverb.';
+    ' Your prize is a silly, word-salad sentence. See if you can write ones of your own with the same adjective, noun, verb and adverb.';
     document.getElementById('randomSentence').innerText = generateRandomSentence();
 
     readyBtn.innerText = 'Well done! Click here to go again :)';
