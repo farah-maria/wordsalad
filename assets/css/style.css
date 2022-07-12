@@ -296,17 +296,14 @@ h3 {
   padding: 2px 5px;
 }
 
-
 h1 {
   text-align: center;
   font-size: 250%;
 }
 
-
 .modal-content {
   font-size: 80%;
 }
-
 }
 
 
@@ -323,20 +320,25 @@ body {
 .text-area {
   background-color: #e9edef;
   width: 90%;
-  margin-top: 100vh;
+  margin-top: 20vh;
   padding: 0;
   padding-left: 2vw;
-  font-size: small;
+  font-size: 80%;
   border-radius: 7%;
   border: solid 3px orange;  
 }
 
-h1 {
-  text-align: center;
+.word-class {
+  font-size: 100%;
+}
+
+h3 {
+  font-size: 80%;
 }
 
 #go_to_quiz {
-  margin-left: 25vw;
+  margin-left: 33vw;
+  font-size: 100%;
 }
 
 .ready .next-frame {
@@ -347,11 +349,11 @@ h1 {
   color: #254c10;
   background-color: papayawhip;
   border: 2px solid #2E4DA7;
+  margin-right: -3vw;
 }
 
 .prompts{
   width: 95%;
-  margin-left: -7vh;
 }
 
 #static-question {
@@ -367,8 +369,6 @@ h1 {
   padding: 0.5px;
   font-weight: 200;
 }
-
-
 
 .answer-grid {
   display: grid;
@@ -389,10 +389,6 @@ h1 {
   background-color: papayawhip;
   border: 2px solid #2E4DA7;
 }
-.prompts {
-  width: 95%;
-  margin-left: 2vh;
-}
 
 .container {
   margin-left: auto;
@@ -406,11 +402,13 @@ i {
   font-size: 150%;
 }
 h1 {
-  font-size: 200%;
-}
-#quiz-container {
+  text-align: center;
+  font-size: 300%;
+  }
 
+.modal-content {
+    font-size: 80%;
+}
+}
 
-}
-}
                   
